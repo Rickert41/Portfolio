@@ -1,0 +1,15 @@
+:root {
+    --background: rgb(30, 29, 43);
+    --gradient: 30, 29, 43; 
+    /* gradient contains values of background */
+    --footer: rgb(32, 32, 32);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    overflow-x: hidden;
+}
