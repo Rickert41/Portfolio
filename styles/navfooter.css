@@ -1,0 +1,253 @@
+button {
+    --size: clamp(5px, 20vw, 100px);
+    height: var(--size);
+    width: var(--size);
+    margin: 5px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--footer);
+    border: none;
+    box-shadow: var(--box-shadow);
+    z-index: 100;
+}
+
+.cross {
+    --size: clamp(20vw, 20vw, 50px);
+    background: none;
+    box-shadow: none;
+    top: 5px;
+}
+
+.none {
+    display: none;
+}
+
+button span {
+    position: absolute;
+}
+
+button span,
+button span:before,
+button span:after {
+    --padding: calc(var(--size) / 6);
+    cursor: pointer;
+    border-radius: 5px;
+    height: calc((var(--size) - (var(--size) / 3)) / 3 - var(--padding));
+    width: calc(var(--size) - (var(--size) / 3));
+    background: var(--background);
+    position: absolute;
+    display: block;
+    content: '';
+}
+
+button span:before {
+    top: var(--padding);
+}
+
+button span:after {
+    bottom: var(--padding);
+}
+
+.cross>span:before,
+.cross>span:after,
+.cross>span {
+    background: rgb(32, 32, 32) !important;
+}
+
+.cross>span {
+    transform: rotate(-45deg);
+    right: 10px;
+    top: 50px;
+}
+
+.cross>span::before {
+    transform: rotate(-90deg);
+    right: 0;
+    top: 0;
+}
+
+.cross>span:after {
+    opacity: 0;
+}
+
+nav {
+    position: fixed;
+    display: none;
+    z-index: 100;
+    box-shadow: var(--box-shadow);
+}
+
+nav.mobile {
+    display: flex;
+    height: 80vh;
+    width: 80vw;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10vh 10vw;
+}
+
+nav.mobile a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+nav.mobile>a:first-child {
+    margin-top: 10vh;
+}
+
+nav.mobile a p {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin: auto 0;
+}
+
+nav>a>img {
+    display: none;
+}
+
+nav.mobile div {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(2, 40%);
+    grid-column-gap: 20%;
+    grid-row-gap: 20%;
+    margin-top: auto;
+}
+
+nav.mobile div img {
+    max-width: 60px;
+}
+
+nav.mobile div img:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+nav.mobile div img:nth-child(2) {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+nav.mobile div img:nth-child(3) {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+nav.mobile div img:nth-child(4) {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+footer {
+    background-color: var(--footer);
+    color: white;
+    padding: var(--nav-width);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: center;
+    z-index: 5;
+}
+
+footer a {
+    position: relative;
+    margin: 5px;
+    color: white;
+}
+
+footer a:hover {
+    font-weight: 700;
+}
+
+h4 {
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer:nth-child(2) {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+footer:nth-child(3) {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+footer:nth-child(4) {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+footer:nth-child(5) {
+    grid-area: 5 / 1 / 6 / 2;
+}
+
+@media (min-width:1281px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        height: 100vh;
+        width: auto;
+        padding: 1vw;
+        background-color: rgb(255, 255, 255);
+    }
+
+    nav:hover a p {
+        display: block;
+    }
+
+    nav a {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: inherit;
+        text-decoration: inherit;
+    }
+
+    nav a:hover p {
+        text-decoration: underline;
+    }
+
+    nav a p {
+        display: none;
+        margin: 0;
+        font-size: 0.8em;
+        margin: 10px;
+        width: 100%;
+        text-align: end;
+    }
+
+    nav a img {
+        display: block;
+        object-fit: cover;
+        padding: 20px 0;
+        width: calc(var(--nav-width) - 2vw);
+        height: calc(var(--nav-width) - 2vw);
+    }
+
+    nav div {
+        display: block;
+        margin-top: auto;
+        padding: 1vw;
+    }
+
+    nav div a img {
+        width: calc(var(--nav-width) - 3.5vw);
+        height: calc(var(--nav-width) - 3.5vw);
+        padding: 10px 0;
+    }
+
+    footer {
+        padding-right: 0;
+    }
+
+}
