@@ -1,0 +1,129 @@
+header {
+    position: relative;
+    height: 80vh;
+    width: 100vw;
+    max-width: 100%;
+    text-align: center;
+    z-index: -1;
+    border-radius: 0 0 10vw 10vw;
+}
+
+header h1 {
+    position: relative;
+    padding-top: 35vh;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tags p {
+    font-weight: 300;
+    font-size: 1em;
+    margin: 5px;
+    background-color: rgb(255, 255, 255);
+    color: var(--card-background);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    padding: 5px 8px;
+}
+
+header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    z-index: -1;
+    border-radius: 0 0 10vw 10vw;
+}
+
+main {
+    padding: 10vw 4vw 4vw 4vw;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 2em;
+    margin-top: 2em;
+}
+
+p a {
+    font-size: 1em;
+    color: inherit;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+}
+
+.images img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 20vh;
+    margin: 2vw 0;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    transition: all .5s ease;
+}
+
+.images img:hover {
+    max-height: 50vh;
+}
+
+@media (min-width:801px)  {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 50vw;
+        max-height: 100%;
+        z-index: 10;
+    }
+
+    header img {
+        border-radius: 0 30px 30px 0;
+    }
+
+    main {
+        padding: 2em;
+        padding-top: 5em;
+        position: relative;
+        height: auto;
+        margin-left: 50vw;
+        max-height: 100%;
+    }
+
+    footer {
+        padding-left: 54vw;
+        padding-right: var(--nav-width);
+        text-align: right;
+    }
+
+    section {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    p {
+        margin:  0;
+    }
+}
+
+@media (min-width:1281px)  { /* navigation sidebar breakpoint */
+    header h1, header div, header img {
+        width: calc(100% - var(--nav-width));
+        padding-left: var(--nav-width);
+    }
+}
