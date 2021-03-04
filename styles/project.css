@@ -1,5 +1,5 @@
 main {
-    padding: 4vw 4vw 10vw 4vw;
+    padding: clamp(20px, 4vw, 40px) 4vw 10vw 4vw;
     background-color: var(--background);
     border-radius: 15px 15px 0 0;
 }
@@ -44,15 +44,23 @@ section:first-child p {
 
 section:nth-child(2) a {
     display: block;
-    background-image: url(https://source.unsplash.com/collection/98508412/);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     position: relative;
     height: 45vh;
     margin: 4vw 0;
     cursor: pointer;
     border-radius: 15px;
     box-shadow: var(--box-shadow);
+}
+
+section:nth-child(2) a:nth-child(1) {
+    background-image: url(../img/projects/foxy/head.jpg);
+}
+
+section:nth-child(2) a:nth-child(2) {
+    background-image: url(../img/projects/icov/head.jpg);
 }
 
 section a .info {

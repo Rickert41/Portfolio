@@ -2,7 +2,7 @@ button {
     --size: clamp(5px, 20vw, 100px);
     height: var(--size);
     width: var(--size);
-    margin: 5px;
+    margin: calc(var(--size)/4);
     border-radius: 50%;
     position: fixed;
     bottom: 0;
