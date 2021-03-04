@@ -1,12 +1,9 @@
 main {
-    padding: 4vw 4vw 10vw 4vw;
+    padding: var(--padding-main);
+    padding-top: 20px;
+    /* padding-bottom: 10vw; */
     background-color: var(--background);
     border-radius: 15px 15px 0 0;
-}
-
-nav {
-    position: fixed;
-    z-index: 100;
 }
 
 header {
@@ -40,56 +37,99 @@ section {
     z-index: 1;
 }
 
-.skills {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 4vw;
-    grid-row-gap: 4vw;
+.intro {
+    max-width: 400px;
 }
 
-.skills p {
-    margin: 10px;
-    text-align: center;
+.skills div:nth-child(1) {
+    width: 100%;
+    margin-bottom: 40px;
 }
 
-.skills:nth-child(1) {
-    grid-area: 1 / 1 / 2 / 2;
+.skills div:nth-child(2) {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: fit-content;
 }
 
-.skills:nth-child(2) {
-    grid-area: 1 / 2 / 2 / 3;
+.skills div:nth-child(2) p {
+    margin: 0 10px 10px 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    background-color: var(--card-background);
 }
 
-.skills:nth-child(3) {
-    grid-area: 2 / 1 / 3 / 2;
+.skills div:nth-child(1) p {
+    position: relative;
+    margin-top: 20px;
+    padding: 10px;
+    z-index: 3;
 }
 
-.skills:nth-child(4) {
-    grid-area: 2 / 2 / 3 / 3;
+.skills div:nth-child(1) p::before,
+.skills div:nth-child(1) p::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #d9f6fa;
+    z-index: -1;
 }
 
-.skills:nth-child(5) {
-    grid-area: 3 / 1 / 4 / 2;
+.skills div:nth-child(1) p::before {
+    border-radius: 10px;
+    width: 100%;
+    background-color: #d9f6fa;
 }
 
-.skills:nth-child(6) {
-    grid-area: 3 / 2 / 4 / 3;
+.skills div:nth-child(1) p::after {
+    border-radius: 10px 2px 2px 10px;
+    background-color: #73d5e4;
 }
 
-article {
-    background-image: url(https://source.unsplash.com/collection/98508412/);
+.skills div:nth-child(1) p:nth-child(1):after {
+    width: 90%;
+}
+
+.skills div:nth-child(1) p:nth-child(2):after {
+    width: 95%;
+}
+
+.skills div:nth-child(1) p:nth-child(3):after {
+    width: 85%;
+}
+
+.skills div:nth-child(1) p:nth-child(4):after {
+    width: 70%;
+}
+
+.projects a {
+    display: block;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     position: relative;
-    height: 35vh;
+    height: 45vh;
     margin: 4vw 0;
     cursor: pointer;
     border-radius: 15px;
     box-shadow: var(--box-shadow);
 }
 
-article .info {
+.projects a:nth-child(1) {
+    background-image: url(../img/projects/foxy/head.jpg);
+}
+
+.projects a:nth-child(2) {
+    background-image: url(../img/projects/icov/head.jpg);
+}
+
+.projects a .info {
     position: absolute;
     background-color: var(--card-background);
     bottom: 0;
@@ -122,19 +162,74 @@ h3 {
     padding: 5px 8px;
 }
 
-.more {
+a.more {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
     position: relative;
     border-radius: 15px;
     background-color: var(--card-background);
-    height: auto;
+    height: 8vh;
+    max-height: 40px;
     background-image: none;
     padding: 20px;
     box-shadow: var(--box-shadow);
 }
 
-@media (min-width:1281px)  { /* navigation sidebar breakpoint */
-    main>section, header h1, header img {
+@media (min-width:800px) {
+    .skills {
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-column-gap: 4vw;
+    }
+
+    .skills div:nth-child(1) {
+        grid-area: 1 / 1 / 2 / 2;
+        min-width: 65vw;
+    }
+
+    .skills div:nth-child(2) {
+        grid-area: 1 / 2 / 2 / 3;
+        padding-top: 20px;
+    }
+
+    .skills div:nth-child(1) p {
+        margin: 20px 0;
+    }
+}
+
+@media (min-width:750px) {
+    .projects:nth-child(2) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: clamp(25px, 4vw, 100px);
+        grid-row-gap: clamp(25px, 4vw, 100px);
+    }
+
+    section a {
+        margin: 0 !important;
+    }
+}
+
+@media (min-width:1600px) {
+    .projects:nth-child(2) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width:1281px) {
+
+    /* navigation sidebar breakpoint */
+    header h1,
+    header img {
         width: calc(100% - var(--nav-width));
         padding-left: var(--nav-width);
+    }
+
+    main {
+        margin-left: var(--nav-width);
     }
 }
