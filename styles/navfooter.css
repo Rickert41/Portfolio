@@ -214,7 +214,12 @@ footer:nth-child(5) {
     }
 
     nav a:hover p {
-        text-decoration: underline;
+        text-decoration: underline solid var(--accent);
+        font-weight: 400;
+    }
+
+    nav a:hover img {
+        filter: invert(71%) sepia(57%) saturate(302%) hue-rotate(140deg) brightness(99%) contrast(90%);
     }
 
     nav a p {
@@ -232,6 +237,7 @@ footer:nth-child(5) {
         padding: 20px 0;
         width: calc(var(--nav-width) - 2vw);
         height: calc(var(--nav-width) - 2vw);
+        transition: filter 0.2s ease;
     }
 
     nav div {
@@ -244,6 +250,11 @@ footer:nth-child(5) {
         width: calc(var(--nav-width) - 3.5vw);
         height: calc(var(--nav-width) - 3.5vw);
         padding: 10px 0;
+        transition: filter 0.2s ease;
+    }
+
+    nav div a:hover img {
+        filter: invert(71%) sepia(57%) saturate(302%) hue-rotate(140deg) brightness(99%) contrast(90%);
     }
 
     footer {

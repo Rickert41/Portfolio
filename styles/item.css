@@ -1,3 +1,7 @@
+header img {
+    filter: brightness(80%);
+}
+
 .tags {
     padding-top: 52vh;
     display: flex;
@@ -28,15 +32,16 @@ main {
     border-radius: 15px 15px 0 0;
 }
 
-h3 {
-    font-weight: 700;
-    font-size: 2em;
-    margin-top: 2em;
+h2 span {
+    text-decoration: none;
+    font-size: 50%;
+    margin-left: 1.5em;
 }
 
-p a {
-    font-size: 1em;
+h2 span a {
+    text-decoration: underline solid var(--accent);
     color: inherit;
+    font-size: inherit;
 }
 
 .images {

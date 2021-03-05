@@ -20,12 +20,6 @@ section {
     max-width: 550px;
 }
 
-.intro a {
-    font-size: inherit;
-    color: inherit;
-    text-decoration: underline;
-}
-
 .skills div:nth-child(1) {
     width: 100%;
     margin-bottom: 40px;
@@ -74,7 +68,7 @@ section {
 
 .skills div:nth-child(1) p::after {
     border-radius: 10px 2px 2px 10px;
-    background-color: #73d5e4;
+    background-color: var(--accent);
 }
 
 .skills div:nth-child(1) p:nth-child(1):after {

@@ -2,6 +2,7 @@
     --background: rgb(255, 255, 255);
     --card-background: rgb(58, 58, 58);
     --card-value: 58, 58, 58; 
+    --accent: #73d5e4;
     /* gradient contains values of background */
     --footer: rgb(32, 32, 32);
     --box-shadow: 5px 5px 8px 0px rgba(var(--card-value), 0.85);
@@ -66,4 +67,16 @@ h2 {
 p {
     font-size: 1.2em;
     font-weight: 300;
+}
+
+p a {
+    font-size: 1em;
+    text-decoration: underline solid var(--accent);
+    color: inherit;
+    transition: color .2s ease;
+}
+
+p a:hover,
+p a:focus {
+    color: var(--accent);
 }
