@@ -4,124 +4,12 @@ main {
     border-radius: 15px 15px 0 0;
 }
 
-header {
-    position: relative;
-    height: 95vh;
-    width: 100vw;
-    max-width: 100%;
-    text-align: center;
-    z-index: -1;
-}
-
-header h1 {
-    position: fixed;
-}
-
-header img {
-    position: fixed;
-    -webkit-backface-visibility: hidden;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    display: block;
-    z-index: -1;
-}
-
-section:first-child h2 {
-    margin-top: 0;
-    text-align: center;
-}
-
-section:first-child p {
-    max-width: 30em;
+main>section:first-child{
+    max-width: 550px;
     margin: 0 auto;
-    margin-bottom: 6vw;
+    margin-bottom: 4vw;
 }
 
-section:nth-child(2) a {
-    display: block;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    height: 45vh;
-    margin: 4vw 0;
-    cursor: pointer;
-    border-radius: 15px;
-    box-shadow: var(--box-shadow);
-}
-
-section:nth-child(2) a:nth-child(1) {
-    background-image: url(../img/projects/foxy/head.jpg);
-}
-
-section:nth-child(2) a:nth-child(2) {
-    background-image: url(../img/projects/icov/head.jpg);
-}
-
-section a .info {
-    position: absolute;
-    background-color: var(--card-background);
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: calc(100% - padding);
-    height: auto;
-    padding: 20px;
-    border-radius: 0 0 15px 15px;
-}
-
-h3 {
-    font-weight: 400;
-    font-size: 1.5em;
-    color: white;
-}
-
-.tags {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.tags p {
-    font-weight: 300;
-    font-size: 0.8em;
-    margin: 10px 10px 0 0;
-    background-color: rgb(255, 255, 255);
-    color: var(--card-background);
-    border-radius: 5px;
-    box-shadow: var(--box-shadow);
-    padding: 5px 8px;
-}
-
-@media (min-width:750px) {
- section:nth-child(2) {
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     grid-template-rows: auto;
-     grid-column-gap: clamp(25px, 4vw, 100px);
-     grid-row-gap: clamp(25px, 4vw, 100px);
- }
-
- section a {
-     margin: 0 !important;
- }
-}
-
-@media (min-width:1600px) {
-    section:nth-child(2) {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
-
-@media (min-width:1281px)  { /* navigation sidebar breakpoint */
-    main>section, header h1, header img {
-        width: calc(100% - var(--nav-width));
-        padding-left: var(--nav-width);
-    }
+main>section:first-child h2 {
+    margin-top: 0;
 }

@@ -6,20 +6,10 @@ main {
 }
 
 header {
-    position: relative;
-    height: 95vh;
-    width: 100vw;
-    max-width: 100%;
-    text-align: center;
-    z-index: -1;
     background-image: url(../img/profile.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-}
-
-header h1 {
-    position: fixed;
 }
 
 section {
@@ -100,78 +90,7 @@ section {
 }
 
 .skills div:nth-child(1) p:nth-child(4):after {
-    width: 70%;
-}
-
-.projects a {
-    display: block;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    height: 45vh;
-    margin: 4vw 0;
-    cursor: pointer;
-    border-radius: 15px;
-    box-shadow: var(--box-shadow);
-}
-
-.projects a:nth-child(1) {
-    background-image: url(../img/projects/foxy/head.jpg);
-}
-
-.projects a:nth-child(2) {
-    background-image: url(../img/projects/icov/head.jpg);
-}
-
-.projects a .info {
-    position: absolute;
-    background-color: var(--card-background);
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: calc(100% - padding);
-    height: auto;
-    padding: 20px;
-    border-radius: 0 0 15px 15px;
-}
-
-h3 {
-    font-weight: 400;
-    font-size: 1.5em;
-    color: white;
-}
-
-.tags {
-    display: flex;
-    flex-direction: row;
-}
-
-.tags p {
-    font-weight: 300;
-    font-size: 0.8em;
-    margin: 10px 10px 0 0;
-    background-color: rgb(255, 255, 255);
-    color: var(--card-background);
-    border-radius: 5px;
-    padding: 5px 8px;
-}
-
-a.more {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    border-radius: 15px;
-    background-color: var(--card-background);
-    height: 40px;
-    width: auto;
-    background-image: none;
-    padding: 20px;
-    box-shadow: var(--box-shadow);
-    margin: 0 auto;
-    margin-top: 4vw;
+    width: 78%;
 }
 
 @media (min-width:800px) {
@@ -195,43 +114,5 @@ a.more {
 
     .skills div:nth-child(1) p {
         margin: 20px 0;
-    }
-}
-
-@media (min-width:750px) {
-    .projects:nth-child(2) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        grid-column-gap: clamp(25px, 4vw, 100px);
-        grid-row-gap: clamp(25px, 4vw, 100px);
-    }
-
-    section a:not(.more) {
-        margin: 0 !important;
-    }
-
-    a.more {
-        width: 50%;
-    }
-}
-
-@media (min-width:1600px) {
-    .projects:nth-child(2) {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
-@media (min-width:1281px) {
-
-    /* navigation sidebar breakpoint */
-    header h1,
-    header img {
-        width: calc(100% - var(--nav-width));
-        padding-left: var(--nav-width);
-    }
-
-    main {
-        margin-left: var(--nav-width);
     }
 }
