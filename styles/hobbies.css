@@ -19,12 +19,6 @@ article h2 {
     margin-top: 0;
 }
 
-p a {
-    font-size: 1em;
-    text-decoration: underline solid var(--accent);
-    color: inherit;
-}
-
 section {
     width: 100vw;
     position: relative;

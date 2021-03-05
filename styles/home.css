@@ -20,12 +20,6 @@ section {
     max-width: 550px;
 }
 
-.intro a {
-    font-size: inherit;
-    color: inherit;
-    text-decoration: underline solid var(--accent);
-}
-
 .skills div:nth-child(1) {
     width: 100%;
     margin-bottom: 40px;

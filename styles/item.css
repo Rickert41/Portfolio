@@ -32,12 +32,6 @@ main {
     border-radius: 15px 15px 0 0;
 }
 
-p a {
-    font-size: 1em;
-    text-decoration: underline solid var(--accent);
-    color: inherit;
-}
-
 h2 span {
     text-decoration: none;
     font-size: 50%;

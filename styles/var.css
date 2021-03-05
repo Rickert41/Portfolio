@@ -68,3 +68,15 @@ p {
     font-size: 1.2em;
     font-weight: 300;
 }
+
+p a {
+    font-size: 1em;
+    text-decoration: underline solid var(--accent);
+    color: inherit;
+    transition: color .2s ease;
+}
+
+p a:hover,
+p a:focus {
+    color: var(--accent);
+}
