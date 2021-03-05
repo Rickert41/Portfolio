@@ -2,6 +2,7 @@
     --background: rgb(255, 255, 255);
     --card-background: rgb(58, 58, 58);
     --card-value: 58, 58, 58; 
+    --accent: #73d5e4;
     /* gradient contains values of background */
     --footer: rgb(32, 32, 32);
     --box-shadow: 5px 5px 8px 0px rgba(var(--card-value), 0.85);

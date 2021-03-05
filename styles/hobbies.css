@@ -21,6 +21,7 @@ article h2 {
 
 p a {
     font-size: 1em;
+    text-decoration: underline solid var(--accent);
     color: inherit;
 }
 
