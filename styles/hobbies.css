@@ -19,6 +19,11 @@ article h2 {
     margin-top: 0;
 }
 
+p a {
+    font-size: 1em;
+    color: inherit;
+}
+
 section {
     width: 100vw;
     position: relative;
@@ -41,6 +46,8 @@ section div {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    transform:translatez(0);
+-webkit-transform:translatez(0);
 }
 
 section div:hover {
