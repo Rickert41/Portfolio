@@ -250,4 +250,16 @@ footer:nth-child(5) {
         padding-right: 0;
     }
 
+    /* navigation sidebar breakpoint */
+    header h1,
+    header img,
+    header div {
+        width: calc(100% - var(--nav-width));
+        padding-left: var(--nav-width);
+    }
+
+    main {
+        margin-left: var(--nav-width);
+    }
+
 }

@@ -1,32 +1,3 @@
-header {
-    position: relative;
-    height: 95vh;
-    width: 100vw;
-    max-width: 100%;
-    text-align: center;
-    z-index: -1;
-}
-
-header h1 {
-    white-space: nowrap;
-    position: fixed;
-}
-
-header img {
-    position: fixed;
-    -webkit-backface-visibility: hidden;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    z-index: -1;
-    margin: 0 auto;
-}
-
 .tags {
     padding-top: 52vh;
     display: flex;
@@ -135,12 +106,5 @@ p a {
 
     p {
         margin:  0;
-    }
-}
-
-@media (min-width:1281px)  { /* navigation sidebar breakpoint */
-    header h1, header div, header img {
-        width: calc(100% - var(--nav-width));
-        padding-left: var(--nav-width);
     }
 }

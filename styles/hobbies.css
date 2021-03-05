@@ -1,0 +1,96 @@
+html {
+    overflow-x: hidden;
+}
+
+main {
+    padding: var(--padding-main);
+    padding-top: 20px;
+    padding-bottom: 0;
+    background-color: var(--background);
+    border-radius: 15px 15px 0 0;
+}
+
+article {
+    max-width: 550px;
+    margin: clamp(20px, 4vw, 80px) 0;
+}
+
+article h2 {
+    margin-top: 0;
+}
+
+section {
+    width: 100vw;
+    position: relative;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: center;
+}
+
+section div {
+    flex: 1 1 auto;
+    width: auto;
+    height: clamp(100px, 15vw, 200px);
+    transition: all 1s ease;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section div:hover {
+    filter: brightness(120%);
+}
+
+section:nth-of-type(1) div:nth-child(1) {
+    background-image: url(../img/hobbies/gallery1.1.jpg);
+}
+
+section:nth-of-type(1) div:nth-child(2) {
+    background-image: url(../img/hobbies/gallery1.2.jpg);
+}
+
+section:nth-of-type(1) div:nth-child(3) {
+    background-image: url(../img/hobbies/gallery1.3.jpg);
+}
+
+section:nth-of-type(1) div:nth-child(4) {
+    background-image: url(../img/hobbies/gallery1.4.jpg);
+}
+
+section:nth-of-type(2) div:nth-child(1) {
+    background-image: url(../img/hobbies/gallery2.1.jpg);
+}
+
+section:nth-of-type(2) div:nth-child(2) {
+    background-image: url(../img/hobbies/gallery2.2.jpg);
+}
+
+section:nth-of-type(2) div:nth-child(3) {
+    background-image: url(../img/hobbies/gallery2.3.jpg);
+}
+
+section:nth-of-type(2) div:nth-child(4) {
+    background-image: url(../img/hobbies/gallery2.4.jpg);
+}
+
+section:nth-of-type(3) div:nth-child(1) {
+    background-image: url(../img/hobbies/gallery3.1.jpg);
+}
+
+section:nth-of-type(3) div:nth-child(2) {
+    background-image: url(../img/hobbies/gallery3.2.jpg);
+}
+
+section:nth-of-type(3) div:nth-child(3) {
+    background-image: url(../img/hobbies/gallery3.3.jpg);
+}
+
+section:nth-of-type(3) div:nth-child(4) {
+    background-image: url(../img/hobbies/gallery3.4.jpg);
+}
