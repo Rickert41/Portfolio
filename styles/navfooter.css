@@ -213,12 +213,15 @@ footer:nth-child(5) {
         text-decoration: inherit;
     }
 
-    nav a:hover p {
+    nav a:hover p,
+    nav a:focus p {
         text-decoration: underline solid var(--accent);
         font-weight: 400;
     }
 
-    nav a:hover img {
+    nav a:hover img,
+    nav a.active img,
+    nav a:focus img {
         filter: invert(71%) sepia(57%) saturate(302%) hue-rotate(140deg) brightness(99%) contrast(90%);
     }
 

@@ -38,6 +38,15 @@
     background-image: url(../img/projects/pintreddit/head.jpg);
 }
 
+.projects a:nth-child(5) {
+    background-image: url(https://github.com/RickGroot/frontend-applications/blob/main/src/img/hummer.jpg?raw=true);
+}
+
+.projects a:nth-child(6) {
+    background-image: url(../img/profile2.jpg);
+}
+
+
 .projects a .info {
     position: absolute;
     background-color: var(--card-background);
