@@ -16,7 +16,7 @@ section {
     z-index: 1;
 }
 
-.intro {
+section>p {
     max-width: 550px;
 }
 

@@ -44,6 +44,11 @@ h2 span a {
     font-size: inherit;
 }
 
+h2 span a:hover,
+h2 span a:focus {
+    color: var(--accent);
+}
+
 .images {
     display: flex;
     flex-direction: column;
@@ -62,6 +67,10 @@ h2 span a {
 
 .images img:hover {
     max-height: 90vh;
+}
+
+section:last-of-type {
+    margin-top: clamp(20px, 2vw, 40px);
 }
 
 @media (min-width:801px)  {
