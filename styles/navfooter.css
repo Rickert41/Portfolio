@@ -17,7 +17,7 @@ button {
 }
 
 .cross {
-    --size: clamp(20vw, 20vw, 50px);
+    --size: clamp(10vw, 20vw, 50px);
     background: none;
     box-shadow: none;
     top: 5px;
@@ -60,6 +60,7 @@ button span:after {
 }
 
 .cross>span {
+    border: none;
     transform: rotate(-45deg);
     right: 10px;
     top: 50px;
@@ -89,13 +90,25 @@ nav.mobile {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 10vh 10vw;
 }
 
 nav.mobile a {
     text-decoration: inherit;
     color: inherit;
+}
+
+nav.mobile a:focus,
+nav.mobile a:hover {
+    text-decoration: underline solid var(--accent);
+    color: inherit;
+}
+
+nav.mobile a:focus,
+button:focus {
+    border: none;
+    outline: none;
 }
 
 nav.mobile>a:first-child {
