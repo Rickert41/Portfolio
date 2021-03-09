@@ -36,6 +36,7 @@ h2 span {
     text-decoration: none;
     font-size: 50%;
     margin-left: 1.5em;
+    white-space: nowrap;
 }
 
 h2 span a {
