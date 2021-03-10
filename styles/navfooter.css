@@ -258,8 +258,8 @@ footer:nth-child(5) {
 
     nav div {
         display: block;
+        margin: 0 auto;
         margin-top: auto;
-        padding: 1vw;
     }
 
     nav div a img {
