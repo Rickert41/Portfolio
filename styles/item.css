@@ -82,8 +82,13 @@ section:last-of-type {
         bottom: 0;
         height: 100vh;
         width: 50vw;
+        min-width: 0;
         max-height: 100%;
         z-index: 10;
+    }
+
+    header img {
+        min-width: 0;
     }
 
     header h1 {
@@ -106,6 +111,10 @@ section:last-of-type {
         height: auto;
         margin-left: 50vw;
         max-height: 100%;
+    }
+
+    .short {
+        min-height: 100vh;
     }
 
     footer {
