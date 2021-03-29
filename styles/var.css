@@ -65,7 +65,7 @@ header h1 {
 }
 
 h2 {
-    margin-top: 4vw;
+    margin-top: clamp(40px, 4vw, 80px);
     margin-bottom: clamp(20px, 2vw, 40px);
     font-weight: 400;
     font-size: clamp(1.8em, 6vw, 2.5em);
