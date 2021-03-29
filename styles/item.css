@@ -27,7 +27,7 @@ header img {
 
 main {
     position: relative;
-    padding: 10vw 4vw 4vw 4vw;
+    padding: 4vw;
     background-color: var(--background);
     border-radius: 15px 15px 0 0;
 }
@@ -47,6 +47,7 @@ h2 span a {
 
 h2 span a:hover,
 h2 span a:focus {
+    transition: color .2s ease;
     color: var(--accent);
 }
 

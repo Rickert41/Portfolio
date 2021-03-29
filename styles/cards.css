@@ -28,7 +28,7 @@
 }
 
 .projects a:nth-child(2) {
-    background-image: url(../img/projects/icov/head.jpg);
+    background-image: url(../img/projects/knmi/head.jpg);
 }
 
 .projects a:nth-child(3) {
@@ -36,14 +36,18 @@
 }
 
 .projects a:nth-child(4) {
-    background-image: url(../img/projects/pintreddit/head.jpg);
+    background-image: url(../img/projects/icov/head.jpg);
 }
 
 .projects a:nth-child(5) {
-    background-image: url(https://github.com/RickGroot/frontend-applications/blob/main/src/img/hummer.jpg?raw=true);
+    background-image: url(../img/projects/pintreddit/head.jpg);
 }
 
 .projects a:nth-child(6) {
+    background-image: url(https://github.com/RickGroot/frontend-applications/blob/main/src/img/hummer.jpg?raw=true);
+}
+
+.projects a:nth-child(7) {
     background-image: url(../img/profile2.jpg);
 }
 

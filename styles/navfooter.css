@@ -209,7 +209,7 @@ footer:nth-child(5) {
         left: 0;
         height: 100vh;
         width: auto;
-        padding: 1vw;
+        padding: 0 1vw;
         background-color: rgb(255, 255, 255);
     }
 
