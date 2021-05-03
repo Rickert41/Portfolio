@@ -1,12 +1,10 @@
 main {
     padding: clamp(20px, 4vw, 40px) 4vw 10vw 4vw;
     background-color: var(--background);
-    border-radius: 15px 15px 0 0;
 }
 
 main>section:first-child{
     max-width: 550px;
-    margin: 0 auto;
     margin-bottom: 4vw;
 }
 
