@@ -157,7 +157,7 @@ nav.mobile div img:nth-child(4) {
 footer {
     background-color: var(--footer);
     color: white;
-    padding: var(--nav-width);
+    padding: 2em 0;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, auto);
@@ -274,7 +274,7 @@ footer:nth-child(5) {
     }
 
     footer {
-        padding-right: 0;
+        padding-left: var(--nav-width);
     }
 
     /* navigation sidebar breakpoint */

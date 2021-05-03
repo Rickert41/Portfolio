@@ -20,7 +20,7 @@ header img {
     margin: 5px;
     background-color: rgb(255, 255, 255);
     color: var(--card-background);
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: var(--box-shadow);
     padding: 5px 8px;
 }
@@ -29,7 +29,6 @@ main {
     position: relative;
     padding: 4vw;
     background-color: var(--background);
-    border-radius: 15px 15px 0 0;
 }
 
 h2 span {
@@ -62,7 +61,7 @@ h2 span a:focus {
     max-height: 20vh;
     margin: 2vw 0;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 3px;
     box-shadow: var(--box-shadow);
     transition: all .5s ease;
 }
@@ -102,7 +101,7 @@ section:last-of-type {
 
     header img {
         position: absolute;
-        border-radius: 0 30px 30px 0;
+        border-radius: 0 3px 3px 0;
     }
 
     main {
