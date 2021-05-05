@@ -11,10 +11,6 @@
 [![LinkediIn: rick-groot-469777193](https://img.shields.io/badge/-rickgroot-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rick-groot-469777193/)](https://www.linkedin.com/in/rick-groot-469777193/)
 [![GitHub RickGroot](https://img.shields.io/github/followers/rickgroot?label=follow&style=social)](https://github.com/rickgroot)
 
-
-
-
-
 ## A bit more about me...
 ```javascript
 const rick = {
@@ -32,5 +28,3 @@ const rick = {
 ![Svelte](https://img.shields.io/badge/-Svelte-000000?style=flat&logo=svelte&logoColor=FF3E00)
 ![Netlify](https://img.shields.io/badge/-Netlify-000000?style=flat&logo=netlify&logoColor=00C7B7)
 ![Heroku](https://img.shields.io/badge/-Heroku-000000?style=flat&logo=heroku&logoColor=430098)
-
-
